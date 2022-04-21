@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Otabek | Fios team | Home </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {% static '/css/style.css' %}">
+    <style>
+        .firstline{
+            width: 46px;
+        }
+        .col-md-6 ul li:nth-child(1) a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div>
+<!-- --------------------------------------------------------------------title-bar------------------------------------------------ -->
+<div class="title-bar ">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                    <ul class="nav  align-items-center title-logo">
+                    <li class="nav-item"><a href="home page.html"> <img src="../static/images/logo.png" class="nav-link" alt=""></a></li>
+                    </ul>
+            </div>
+            <div class="col-md-6 mt-2">
+                <ul class="nav  align-items-center title-text">
+                    <li class="nav-item mr-5"><span><a href="{% url 'home_page' %}">Home<span class="firstline"></span></a></span></li>
+                    <li class="nav-item mr-5"><span><a href="{% url 'about_page' %}">Biz haqimizda<span class="secondtline"></span></a></span></li>
+                    <li class="nav-item mr-5"><span><a href="{% url 'courses_page' %}">Kurslar<span class="threeline"></span> </a></span></li>
+                    <li class="nav-item mr-5 "><span><a href="{% url 'contact_page' %}">Bog'lanish<span class="fourline"></span> </a></span></li>
+                    <li class="nav-item btn btn-danger title-ariza" ><a href="{% url 'appeal_page' %}">Ariza qoldirish </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------title-bar------------------------------------------------ -->
+
+<!-- --------------------------------------------------------------------home-page------------------------------------------------ -->
+<br><br><br><br><br>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <div class="home-fios">
+            <strong><span style="color: #9407bf;"><b>F</b></span><span style="color: #fc882f;"><b>IOS</b> </span> bu  ........ <br> ........... jamoasi.</strong>
+          </div>
+        <p class="home-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Delectus<br> eius  distinctio odit, magni magnam qui ex perferendis
+          vitae!
+        </p>
+        </div>
+        <div class="col-md-6 image_2">
+          <img src="../static/images/person.svg" alt="Person Image" class="person" />
+        </div>
+      </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------home-page------------------------------------------------ -->
+
+</body>
+</html>

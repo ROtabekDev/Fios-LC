@@ -1,0 +1,226 @@
+/* ------------------------> block BASE CSS <------------------------ */
+.title-logo img {
+    width: 180px;
+    margin-right: 13rem;
+    cursor: pointer;
+}
+.title-text{
+    position: relative;
+
+}
+.title-text span a{
+    cursor: pointer;
+    color: rgba(170, 163, 163, 0.945);
+    text-decoration: none;
+    margin-right: 3rem;
+}
+.title-ariza a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s linear;
+}
+.firstline{
+    width: 0;
+    height: 3px;
+    background-color: rgb(7, 187, 7);
+    position: absolute;
+    left:-2px;
+    top: 32px;
+    transition: all 0.4s linear;
+}
+.secondtline{
+    width: 0;
+    height: 3px;
+    background-color: rgb(7, 187, 7);
+    position: absolute;
+    left: 89px;
+    top: 32px;
+    transition: all 0.4s linear;
+}
+.threeline{
+    width: 0;
+    height: 3px;
+    background-color: rgb(7, 187, 7);
+    position: absolute;
+    left: 234px;
+    top: 32px;
+    transition: all 0.4s linear;
+}
+.fourline{
+    width: 0;
+    height: 3px;
+    background-color: rgb(7, 187, 7);
+    position: absolute;
+    left: 330px;
+    top: 32px;
+    transition: all 0.4s linear;
+}
+.col-md-6 ul li:hover:nth-child(1) .firstline{
+    width: 46px;
+}
+.col-md-6 ul li:hover:nth-child(2) .secondtline{
+    width: 102px;
+}
+.col-md-6 ul li:hover:nth-child(3) .threeline{
+    width: 52px;
+}
+.col-md-6 ul li:hover:nth-child(4) .fourline{
+    width: 78px;
+}
+.col-md-6 ul li:hover:nth-child(1) a{
+    color: black;
+}
+.col-md-6 ul li:hover:nth-child(2) a{
+    color: black;
+}
+.col-md-6 ul li:hover:nth-child(3) a{
+    color: black;
+}
+.col-md-6 ul li:hover:nth-child(4) a{
+    color: black;
+}
+.title-ariza:hover{
+    background-color: yellow;
+
+}
+.title-ariza:hover a{
+    color: black;
+}
+.image_2 img{
+    width: 100%;
+    margin-right: 5rem;
+}
+.title-bar{
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding-bottom: 1rem;
+    z-index: 1;
+}
+.title-line{
+    font-size: 2.5rem;
+    color: white;
+    background-color:rgba(35, 143, 11, 0.726);
+    padding: 1.5rem;
+}
+.title-line:hover{
+    background-color: red;
+    transition: all 1s linear;
+} 
+.footer-line{
+    color: white;
+    background-color:rgba(35, 143, 11, 0.726);
+    padding: 1.5rem;
+}
+.footer-line:hover{
+    background-color:red;
+    transition: all 1s linear;
+}
+.footer-line a{
+    text-decoration: none;
+    color: white;
+}
+/* ------------------------> endblock BASE CSS <------------------------ */
+/* ------------------------> block HOME PAGE CSS <------------------------ */
+.home-fios{
+    font-size: 3.5rem;
+}
+.home-text{
+    font-size: 1.2rem;
+}
+
+/* ------------------------> endblock HOME PAGE CSS <------------------------ */
+/* ------------------------> block ABOUT PAGE CSS <------------------------ */
+.about-fios{
+    font-size: 5rem;
+}
+.image_3 img{
+    width: 100%;
+}
+.image_about_1 img{
+    width: 180%;
+}
+.image_about_2 img{
+    margin-top: 3rem;
+    width: 90%;
+}
+.image_about_3 img{
+    width: 150%;
+}
+.image_about_4 img{
+    width: 100%;
+}
+.about-fios-2{
+    font-size: 4rem;
+}
+.text_about h1{
+    font-size: 4.5rem;
+}
+.image_about_5 img{
+    width: 50%;
+}
+.image_about_6 img{
+    width: 75%;
+    margin-left: 27%;
+}
+.image_about_7 img{
+    width: 60%;
+}
+
+/* ------------------------> endblock ABOUT PAGE CSS <------------------------ */
+/* ------------------------> block COURSE PAGE CSS <------------------------ */
+.courses-rasmlar{
+    position: relative;
+}
+.courses-rasmlar img{
+    width: 240px;
+    height: 240px;
+    margin: 1rem;
+    transition: all 1s linear;
+}
+.courses-fon {
+    width: 260px;
+    height: 260px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    background: linear-gradient(180deg, transparent, #1f6403), linear-gradient(360deg, transparent, #0806a3);
+    border-radius: 5px;
+    padding-top: 20%;
+    padding-left: 5%;
+    transition: all 1s linear;
+}
+.courses-rasmlar .courses-fon .btn1 {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    transition: all 0.6s linear;
+}
+.courses-fon {
+    opacity: 0;
+}
+.courses-rasmlar:hover .courses-fon {
+    opacity: 1;
+}
+.courses-rasmlar:hover .courses-image{
+    width: 240px;
+    height: 0;
+    margin: 1rem;
+}
+.courses-rasmlar .courses-fon .btn1:hover {
+    color: black;
+    background-color: yellow;
+}
+
+
+/* ------------------------> endblock COURSE PAGE CSS <------------------------ */
+/* ------------------------> block APPEAL PAGE CSS <------------------------ */
+
+/* ------------------------> endblock APPEAL PAGE CSS <------------------------ */

@@ -1,0 +1,126 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock title %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href=" {% static '/css/style.css' %}">
+    <style>
+    {% block style %}
+
+     {% endblock style %}
+    </style>
+</head>
+<body>
+<div>
+<!-- --------------------------------------------------------------------title-bar------------------------------------------------ -->
+<div class="title-bar">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                    <ul class="nav  align-items-center title-logo">
+                    <li class="nav-item"><a href="{% url 'home_page' %}"> <img src="../static/images/logo.png" class="nav-link" alt=""></a></li>
+                    </ul>
+            </div>
+            <div class="col-md-6 mt-2">
+                <ul class="nav  align-items-center title-text">
+                    <li class="nav-item mr-5"><span><a href="{% url 'home_page' %}">Home<span class="firstline"></span></a></span></li>
+                    <li class="nav-item mr-5"><span><a href="{% url 'about_page' %}">Biz haqimizda<span class="secondtline"></span></a></span></li>
+                    <li class="nav-item mr-5"><span><a href="{% url 'courses_page' %}">Kurslar<span class="threeline"></span> </a></span></li>
+                    <li class="nav-item mr-5 "><span><a href="{% url 'contact_page' %}">Bog'lanish<span class="fourline"></span> </a></span></li>
+                    <li class="nav-item btn btn-danger title-ariza" ><a href="{% url 'appeal_page' %}">Ariza qoldirish </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------title-bar------------------------------------------------ -->
+
+<!-- --------------------------------------------------------------------title-line------------------------------------------------ -->
+<div class="title-line mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <strong>Ariza qoldirish</strong>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------title-line------------------------------------------------ -->
+    {% block content %}
+
+    {% endblock content %}
+<!-- --------------------------------------------------------------------footer-line------------------------------------------------ -->
+<div class="footer-line">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Fios team</h1>
+                    </div>
+                    <div class="col-md-12">
+                    <p>
+                        Toshkent 100084, Amir Temur shox <br> ko‘chasi 108 uy
+                    </p>
+                    <p>
+                        (71) 123-45-67 <br>
+                        <a href="#"> fiosteam@gmail.com</a>
+                    </p>
+                    </div>
+                </div>
+			</div>
+			<div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12 ms-4">
+                        <h1>Asosiy</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="#">Kompaniya haqida</a></li>
+                            <li><a href="#">Huquqiy hujjatlar</a></li>
+                            <li><a href="#">Bog’lanish</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+			<div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12 ms-4">
+                        <h1>Ta'lim</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="#">Online</a></li>
+                            <li><a href="#">Onsite</a></li>
+                            <li><a href="#">Imtiyoz</a></li>
+                            <li><a href="#">Hamkorlik</a></li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+			<div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12 ms-4">
+                        <h1>Loyihalar</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="#">Fios Media</a></li>
+                            <li><a href="#">Fios Books</a></li>
+                            <li><a href="#">Fios Food</a></li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+		</div><br>
+        <div class="col-md-12">
+            <span>&copy; 2021, Fios team.</span>
+        </div>
+	</div>
+</div>
+</div>
+<!-- --------------------------------------------------------------------footer-line------------------------------------------------ -->
+</body>
+</html>
